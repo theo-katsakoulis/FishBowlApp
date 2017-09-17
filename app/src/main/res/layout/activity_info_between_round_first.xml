@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layoutContainer"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.05">  <!-- the left part -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.9">   <!-- the middle part -->
+
+        <!-- this is the main layout. the other parts are for 70% width -->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:showDividers="none" >
+
+            <TextView
+                android:id="@+id/display_round_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp"
+                android:scrollbars="vertical"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_27sdp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/display_round_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp"
+                android:scrollbars="vertical"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/continue_button"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:text="@string/button_next_team"
+                android:background="@drawable/buttons"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_below="@+id/display_round_stats" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.05">  <!-- the right part -->
+    </RelativeLayout>
+</LinearLayout>

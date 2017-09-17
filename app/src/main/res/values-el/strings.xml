@@ -1,0 +1,271 @@
+<resources>
+
+    <!-- Application Name -->
+
+    <string name="app_name">Salad Bowl Game</string>
+
+    <!-- Selected Language -->
+
+    <string name="lang">el</string>
+
+    <!-- Labels for Greek -->
+
+    <string name="label_MainRulesActivity">Κανόνες</string>
+
+    <string name="label_MainLanguageActivity">Γλώσσα</string>
+
+    <string name="label_SettingsGamePlayActivity">Ρυθμίσεις Παιχνιδιού</string>
+
+    <string name="label_SettingsChooseCategoriesActivity">Κατηγορία Λέξεων</string>
+
+    <string name="label_SettingsTeamDetailsActivity">Λεπτομέρειες Ομάδας</string>
+
+    <string name="label_SettingsInsertWordsActivity">Εισαγωγή Λέξεων</string>
+
+    <string name="label_PlayingGameActivity">Γύρος Παιχνιδιού</string>
+
+    <string name="label_InfoBetweenRoundActivity">Συνεχίστε τον γύρο</string>
+
+    <string name="label_InfoEndOfRoundActivity">Τέλος Γύρου</string>
+
+    <string name="label_InfoBeforeNewRoundActivity">Ετοιμαστείτε για τον επόμενο γύρο</string>
+
+    <string name="label_InfoEndOfGameActivity">Τέλος Παιχνιδιού</string>
+
+
+    <!-- Main Activity -->
+
+    <string name="main_title">Salad Bowl</string>
+
+    <string name="play_button">Παιξε</string>
+
+    <string name="rules_button">Κανονες</string>
+
+    <string name="language_button">Γλωσσα</string>
+
+
+    <!-- For strings that are used for more than one Activity -->
+
+    <string name="button_back">Πισω</string>
+
+    <string name="button_next">Συνεχεια</string>
+
+
+    <!-- Main Rules Activity -->
+
+    <!--<string name="rules_paragraph">
+        1ος Γύρος
+        Ξεκινάει ο πρώτος παίκτης από την πρώτη ομάδα και διαβάζει μια λέξη από την οθόνη σιωπηλά. Στη συνέχεια έχει κάποια δευτερόλεπτα να περιγράψει τη λέξη στους
+        συμπαίκτες του, χρησιμοποιώντας οποιαδήποτε λέξη εκτός από τη δοθείσα λέξη. Αν μαντέψουν σωστά οι συμπαίκτες του μέσα στο χρόνο που έχουν παίρνουν 1 πόντο.
+        Αν ο παίκτης πει τη δοθείσα λέξη, τότε αφαιρείται από την η ομάδα -1 πόντος. Αν ο παίκτης δεν μπορεί να περιγράψει τη λέξη, μπορεί να πάει στην επόμενη. Ο γύρος συνεχίζεται
+        μέχρι βρουν οι ομάδες όλες τις λέξεις.
+
+        2ος Γύρος
+        Σε αυτόν τον γύρο ισχύει ό,τι και στον προηγούμενο, δηλαδή κάθε παίκτης περιγράφει λέξεις στην ομάδα του, αλλά τώρα έχουν μόνο τρεις λέξεις για να την περιγράψουν (μονολεκτικά).
+        Κάθε λέξη που βρίσκει η ομάδα παίρνει 2 πόντους.
+
+        3ος Γύρος
+        Το πλάνο είναι το ίδιο, με τη διαφορά ότι σε αυτόν τον γύρο ο παίκτης δεν μπορεί να μιλήσει για να περιγράψει τη λέξη. Πρέπει να την περιγράψει με παντομίμα και να
+        δεν επιτρέπεται να δείχνει αντικείμενα μέσα στο χώρο. Για κάθε λέξη που βρίσκει η ομάδα παίρνει +3 πόντους.
+
+        Στο τέλος αυτού του γύρου τελειώνει το παιχνίδι, υπολογίζονται οι πόντοι για την κάθε ομάδα και βγαίνει ο νικητής.
+
+    </string>-->
+
+    <string name="rules_main_title">Κανόνες</string>
+
+    <string name="rules_title_round1">1ος Γύρος</string>
+
+    <string name="rules_round1">
+        Ξεκινάει ο πρώτος παίκτης από την πρώτη ομάδα και διαβάζει μια λέξη από την οθόνη σιωπηλά. Στη συνέχεια έχει κάποια δευτερόλεπτα να περιγράψει τη λέξη στους
+        συμπαίκτες του, χρησιμοποιώντας οποιαδήποτε λέξη εκτός από τη δοθείσα λέξη. Αν μαντέψουν σωστά οι συμπαίκτες μέσα στο χρόνο που έχουν παίρνουν +1 πόντο.
+        Αν ο παίκτης πει τη δοθείσα λέξη, τότε αφαιρείται από την ομάδα -1 πόντος. Αν ο παίκτης δεν μπορεί να περιγράψει τη λέξη, μπορεί να πάει στην επόμενη. Ο γύρος συνεχίζεται
+        μέχρι βρουν οι ομάδες όλες τις λέξεις.
+    </string>
+
+    <string name="rules_title_round2">2ος Γύρος</string>
+
+    <string name="rules_round2">
+        Σε αυτόν τον γύρο ισχύει ό,τι και στον προηγούμενο, δηλαδή κάθε παίκτης περιγράφει λέξεις στην ομάδα του, αλλά τώρα έχουν μόνο τρεις λέξεις για να την περιγράψουν (μονολεκτικά).
+        Κάθε λέξη που βρίσκει η ομάδα παίρνει +2 πόντους.
+    </string>
+
+    <string name="rules_title_round3">3ος Γύρος</string>
+
+    <string name="rules_round3">
+        Το πλάνο είναι το ίδιο, με τη διαφορά ότι σε αυτό το γύρο ο παίκτης δεν μπορεί να μιλήσει για να περιγράψει τη λέξη. Πρέπει να την περιγράψει με παντομίμα και
+        δεν επιτρέπεται να δείχνει αντικείμενα μέσα στο χώρο. Για κάθε λέξη που βρίσκει η ομάδα παίρνει +3 πόντους.
+
+        Στο τέλος αυτού του γύρου τελειώνει το παιχνίδι, υπολογίζονται οι πόντοι για την κάθε ομάδα και βγαίνει ο νικητής.
+    </string>
+
+
+    <!-- Main Language Activity -->
+
+    <string name="title_language">Επιλέξτε Γλώσσα</string>
+
+    <string name="button_english">English</string>
+
+    <string name="button_greek">Ελληνικα</string>
+
+
+    <!-- Settings GamePlay Activity -->
+
+    <string name="title_num_teams">Αριθμός ομάδων</string>
+
+    <string name="radio_teams2">2 Ομάδες</string>
+
+    <string name="radio_teams3">3 Ομάδες</string>
+
+    <string name="radio_teams4">4 Ομάδες</string>
+
+    <string name="title_round_time">Χρόνος γύρου</string>
+
+    <string name="radio_seconds1">60 δεύτερα</string>
+
+    <string name="radio_seconds2">90 δεύτερα</string>
+
+    <string name="radio_seconds3">120 δεύτερα</string>
+
+    <string name="title_words_input">Εισαγωγή λέξεων</string>
+
+    <string name="radio_words_input1">Από το σύστημα</string>
+
+    <string name="radio_words_input2">Από τους παίκτες</string>
+
+    <string name="title_words_per_team">Λέξεις ανά ομάδα</string>
+
+    <string name="words_per_team_hint"> Από 4 μέχρι 20</string>
+
+    <string name="words_error">Εισάγετε αριθμό λέξεων ανά ομάδα από 4 μέχρι 20!</string>
+
+    <string name="words_num_error">Η εισαγωγή αριθμού λέξεων ανά ομάδα είναι υποχρεωτική!</string>
+
+
+    <!-- Settings Team Details Activity -->
+
+    <string name="title_name1">Όνομα πρώτης ομάδας</string>
+    <string name="hint_name1"> Ομάδα 1</string>
+
+    <string name="title_name2">Όνομα δεύτερης ομάδας</string>
+    <string name="hint_name2"> Ομάδα 2</string>
+
+    <string name="title_name3">Όνομα τρίτης ομάδας</string>
+    <string name="hint_name3"> Ομάδα 3</string>
+
+    <string name="title_name4">Όνομα τέταρτης ομάδας</string>
+    <string name="hint_name4"> Ομάδα 4</string>
+
+
+    <!-- Settings Insert Words Activity -->
+
+    <string name="enter_word">εισάγετε λέξη</string>
+
+    <string name="enter_word1">εισάγετε λέξη 1 από</string>
+
+    <string name="of">τις</string>
+
+    <string name="words_wr_error">Η εισαγωγή λέξης είναι υποχρεωτική!</string>
+
+    <string name="title_enter_word">Εισάγετε μια λέξη:</string>
+
+    <string name="button_next_word">Επoμενη λεξη</string>
+
+
+    <!-- Settings Choose Categories Activity -->
+
+    <string name="category_random">Τυχαιες Λεξεις</string>
+
+    <string name="category_movies">Ταινιες</string>
+
+    <string name="category_countries">Χωρες</string>
+
+    <string name="category_animals">Ζωα</string>
+
+    <string name="category_error">Επιλέξτε μια ή παραπάνω κατηγορίες!</string>
+
+
+    <!-- Playing Game Activity -->
+
+    <string name="title_round">Γύρος</string>
+
+    <string name="title_team_playing">Παίζει η ομάδα:</string>
+
+    <string name="title_rem_secs">Δευτερόλεπτα:</string>
+
+    <string name="title_describe_word">Περιέγραψε τη λέξη:</string>
+
+    <string name="button_mistake">Λαθος</string>
+
+    <string name="button_found">Βρεθηκε</string>
+
+    <string name="button_skip">Επομενη</string>
+
+
+    <!-- Info Before New Round Activity -->
+
+    <string name="round_rules_button">Κανoνες γυρου</string>
+
+    <string name="title_ready">Ετοιμαστείτε για τον Γύρο </string>
+
+    <string name="title_team">Η Ομάδα </string>
+
+    <string name="title_is_playing">παίζει</string>
+
+    <string name="title_found_points1">Κάθε λέξη που βρίσκετε πιάνει +1 πόντο και κάθε λάθος -1 πόντο!</string>
+
+    <string name="title_found_points2">Κάθε λέξη που βρίσκετε πιάνει +2 πόντους και κάθε λάθος -1 πόντο!</string>
+
+    <string name="title_found_points3">Κάθε λέξη που βρίσκετε πιάνει +3 πόντους και κάθε λάθος -1 πόντο!</string>
+
+
+    <!-- Info Between Round Activity -->
+
+    <string name="found_words">Η Ομάδα: %1$s βρήκε %2$d λέξεις.</string>
+
+    <string name="rem_words">Μένουν άλλες %1$d λέξεις για να τελειώσει ο Γύρος %2$d</string>
+
+    <string name="button_next_team">Επομενη Ομαδα</string>
+
+
+    <!-- Info End Of Round Activity -->
+
+    <string name="team">Ομάδα</string>
+
+    <string name="end_of_round">Τέλος του Γύρου</string>
+
+    <string name="words_found">Λέξεις\nΒρέθηκαν</string>
+
+    <string name="words_mistake">Λέξεις\nΛάθος</string>
+
+    <string name="round_points">Πόντοι\nΓύρου</string>
+
+    <string name="next_round">Επομενος γυρος</string>
+
+
+    <!-- Info End Of Game Activity -->
+
+    <string name="draw_2">Έχουμε ΙΣΟΠΑΛΙΑ ανάμεσα στις Ομάδες : %1$s και %2$s με %3$d Πόντους!</string>
+
+    <string name="draw_3">Έχουμε ΙΣΟΠΑΛΙΑ ανάμεσα στις Ομάδες :  %1$s , %2$s και %3$s με %4$d Πόντους!</string>
+
+    <string name="draw_all">>Έχουμε ΙΣΟΠΑΛΙΑ ανάμεσα σε ΟΛΕΣ τις Ομάδες</string>
+
+    <string name="won">ΚΕΡΔΙΣΕ, με</string>
+
+    <string name="and">και</string>
+
+    <string name="with">με</string>
+
+    <string name="points">Πόντους</string>
+
+    <string name="overall_found">Συνολικά\nΒρέθηκαν</string>
+
+    <string name="overall_mistakes">Συνολικά\nΛάθη</string>
+
+    <string name="overall_points">Συνολικοί\nΠόντοι</string>
+
+    <string name="new_game_button">Νεο παιχνιδι</string>
+
+
+</resources>

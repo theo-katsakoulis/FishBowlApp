@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/layoutContainer" android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.05">  <!-- the left part -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.9">   <!-- the middle part -->
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:showDividers="none" >
+
+            <Button
+                android:id="@+id/random_words_button"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:text="@string/category_random"
+                android:background="@drawable/categories_buttons"
+                android:drawableTop="@drawable/random_words_icon"
+                android:layout_marginTop="@dimen/_27sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:id="@+id/movies_button"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:text="@string/category_movies"
+                android:background="@drawable/categories_buttons"
+                android:drawableTop="@drawable/movies_icon"
+                android:layout_alignTop="@+id/random_words_button"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/_12sdp"
+                android:layout_alignParentEnd="true" />
+
+            <!--<Button
+                android:id="@+id/celebrities_button"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:text="Celebrities"
+                android:background="@drawable/categories_buttons"
+                android:drawableTop="@drawable/celebrities_icon"
+                android:layout_below="@+id/countries_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="21dp" />-->
+
+            <TextView
+                android:id="@+id/display_error"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textSize="25dp"
+                android:text=""
+                android:layout_below="@+id/animals_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="94dp"
+                android:layout_marginStart="94dp"
+                android:layout_marginTop="50dp" />
+
+            <Button
+                android:id="@+id/animals_button"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:text="@string/category_animals"
+                android:background="@drawable/categories_buttons"
+                android:drawableTop="@drawable/animals_icon"
+                android:layout_below="@+id/random_words_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="31dp" />
+
+            <Button
+                android:id="@+id/countries_button"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:text="@string/category_countries"
+                android:background="@drawable/categories_buttons"
+                android:drawableTop="@drawable/countries_icon"
+                android:layout_above="@+id/display_error"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/movies_button"
+                android:textSize="@dimen/_12sdp"
+                android:layout_alignStart="@+id/movies_button" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/buttons"
+            android:text="@string/button_back"
+            android:layout_marginBottom="19dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/buttons"
+            android:text="@string/button_next"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignBaseline="@+id/back"
+            android:layout_alignBottom="@+id/back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.05">  <!-- the right part -->
+    </RelativeLayout>
+</LinearLayout>

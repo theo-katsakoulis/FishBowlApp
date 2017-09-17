@@ -1,0 +1,271 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layoutContainer"
+    android:background="@drawable/background_white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.1">  <!-- the left part -->
+
+        <ImageView
+            android:id="@+id/time_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_67sdp"
+            android:layout_below="@+id/team_icon"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/time_icon"
+            />
+
+        <ImageView
+            android:id="@+id/words_input_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_67sdp"
+            android:layout_below="@+id/time_icon"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/word_input_icon"
+            />
+
+        <ImageView
+            android:id="@+id/word_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_67sdp"
+            android:layout_below="@+id/words_input_icon"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/word_icon"
+            />
+
+        <ImageView
+            android:id="@+id/team_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_67sdp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/team_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.85">   <!-- the middle part -->
+
+        <!-- this is the main layout. the other parts are for 70% width -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:showDividers="none"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_num_teams"
+                android:id="@+id/textViewTeams"
+                android:textSize="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupTeams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonTeams1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_teams2"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTeams2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_teams3"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTeams3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_teams4"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_round_time"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:id="@+id/textViewTime"
+                android:textSize="@dimen/_20sdp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSeconds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonSeconds1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_seconds1"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSeconds2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_seconds2"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSeconds3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_seconds3"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_words_input"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:id="@+id/textViewWordsInput"
+                android:textSize="@dimen/_20sdp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupWordsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonWords1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_words_input1"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWords2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/radio_words_input2"
+                    android:textColor="@drawable/rbtn_textcolor_selector" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewWordsNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/title_words_per_team"
+                android:textSize="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/words_per_team"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:ems="10"
+                android:hint="@string/words_per_team_hint"
+                android:textSize="@dimen/_15sdp"
+                android:inputType="number" >
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/buttons"
+            android:text="@string/button_back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/buttons"
+            android:text="@string/button_next"
+            android:layout_alignBaseline="@+id/back"
+            android:layout_alignBottom="@+id/back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.1">  <!-- the right part -->
+    </RelativeLayout>
+</LinearLayout>

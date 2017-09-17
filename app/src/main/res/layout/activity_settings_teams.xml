@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/layoutContainer" android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.1">  <!-- the left part -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.85">   <!-- the middle part -->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:showDividers="none">
+
+            <TextView
+                android:id="@+id/title_team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_27sdp"
+                android:text="@string/title_name1"
+                android:textSize="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/team_name1"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:hint="@string/hint_name1"
+                android:textSize="@dimen/_15sdp"
+                android:inputType="text" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/title_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/title_name2"
+                android:textSize="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/team_name2"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:hint="@string/hint_name2"
+                android:textSize="@dimen/_15sdp"
+                android:inputType="text" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/title_team3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/title_name3"
+                android:textSize="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/team_name3"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:hint="@string/hint_name3"
+                android:textSize="@dimen/_15sdp"
+                android:inputType="text" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/title_team4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/title_name4"
+                android:textSize="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/team_name4"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:hint="@string/hint_name4"
+                android:textSize="@dimen/_15sdp"
+                android:inputType="text" >
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/buttons"
+            android:text="@string/button_back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/buttons"
+            android:text="@string/button_next"
+            android:layout_alignBottom="@+id/back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/back" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.1">  <!-- the right part -->
+    </RelativeLayout>
+</LinearLayout>

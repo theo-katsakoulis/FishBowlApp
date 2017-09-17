@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
+    android:showDividers="none"
+    android:background="@drawable/background_white"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="@string/main_title"
+        android:textSize="@dimen/_35sdp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="@dimen/_229sdp"
+        android:layout_height="@dimen/_168sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:tint="#557c1414"
+        android:src="@drawable/main_icon"
+        android:layout_weight="0.27" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/buttons_main"
+        android:text="@string/play_button"
+        android:textSize="@dimen/_20sdp" />
+
+    <Button
+        android:id="@+id/rules_button"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/buttons_main"
+        android:text="@string/rules_button"
+        android:textSize="@dimen/_20sdp" />
+
+    <Button
+        android:id="@+id/language_button"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/buttons_main"
+        android:text="@string/language_button"
+        android:textSize="@dimen/_20sdp" />
+</LinearLayout>

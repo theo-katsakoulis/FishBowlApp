@@ -1,0 +1,308 @@
+<resources>
+
+    <!-- Application Name -->
+
+    <string name="app_name">Salad Bowl Game</string>
+
+    <!-- Selected Language -->
+
+    <string name="lang">eng</string>
+
+    <!-- Labels for English -->
+
+    <string name="label_MainRulesActivity">Rules</string>
+
+    <string name="label_MainLanguageActivity">Language</string>
+
+    <string name="label_SettingsGamePlayActivity">Game Settings</string>
+
+    <string name="label_SettingsChooseCategoriesActivity">Words Categories</string>
+
+    <string name="label_SettingsTeamDetailsActivity">Team Details</string>
+
+    <string name="label_SettingsInsertWordsActivity">Insert Words</string>
+
+    <string name="label_PlayingGameActivity">Playing Game</string>
+
+    <string name="label_InfoBetweenRoundActivity">Continue Round</string>
+
+    <string name="label_InfoEndOfRoundActivity">End of Round</string>
+
+    <string name="label_InfoBeforeNewRoundActivity">Get Ready for Next Round</string>
+
+    <string name="label_InfoEndOfGameActivity">Game Over</string>
+
+
+    <!-- Main Activity -->
+
+    <string name="main_title">Salad Bowl</string>
+
+    <string name="play_button">Play</string>
+
+    <string name="rules_button">Rules</string>
+
+    <string name="language_button">Language</string>
+
+
+    <!-- For strings that are used for more than one Activity -->
+
+    <string name="button_back">Back</string>
+
+    <string name="button_next">Next</string>
+
+
+    <!-- Main Rules Activity -->
+
+    <!--<string name="rules_paragraph">
+        Round 1
+        From the starting team, one person will read a given word silently from the screen.
+        They then have some time to try and get their teammates to guess the word. They can say anything they want except the given word.
+        They can also use any gestures they wish, except for spelling the word in the air. If their team mates guess correctly in given time,
+        they take 1 point and the word. The players could also skip a word if they cant describe it. In case the player says the given word, the team gets one point removed
+        and they cant play that word for that round. If your team guesses the word, you describe another word and continue until your time is up.
+
+        Play continues clockwise, with each team having one team member describing a word, until there are no words left.
+
+
+        Round Two
+        Now one person from each team again will read a given word silently from the screen. This time, they can only say three words total to describe it. They
+        can still use any gestures they wish except for spelling the word in the air. They cannot say the given word and their team has some seconds to guess.
+        If someone on their team guesses, they take 1 point. If your team guesses the word, you get another word to describe and continue until your time is up.
+        Play continues clockwise, with each team having one team member go to the bowl, until the bowl is empty.
+
+        Each found word is now worth two points.
+
+        Round Three
+        Same basic play plan, except now whoever plays cannot speak. They can use any gestures or movements they want. Their team has some seconds to guess the name on the paper.
+        If they guess correctly, they take 3 points. If your team guesses the word, you describe another one and continue until your time is up.
+
+        At the end of Round Three the game stops and determine a winner.
+
+    </string>-->
+
+    <string name="rules_main_title">Rules</string>
+
+    <string name="rules_game">
+        SaladBowl is a word-guessing team party game and can be played with two teams or more. On each teams turn one person (the \'actor\') is assigned
+        a series of words and tries to get their partners (the \'guesser\') to guess as many words as they can in the given time. The game has three rounds and
+        each one has its own rules.
+
+    </string>
+
+    <string name="rules_title_round1">Round 1: Verbal Clues </string>
+
+    <string name="rules_round1">
+        <!--From the starting team, one person will read a given word silently from the screen.
+        They then have some time to try and get their teammates to guess the word. They can say anything they want except the given word.
+        They can also use any gestures they wish, except for spelling the word in the air. If their team mates guess correctly in given time,
+        they take 1 point and the word. The players could also skip a word if they cant describe it. In case the player says the given word, the team gets one point removed
+        and they cant play that word for that round. If your team guesses the word, you describe another word and continue until your time is up.
+
+        Play continues clockwise, with each team having one team member describing a word, until there are no words left.-->
+
+        The actor describes their assigned word to the guesser, using any words OTHER than the word itself.
+    </string>
+
+    <string name="rules_title_round2">Round 2: One Word Clue</string>
+
+    <string name="rules_round2">
+        <!--Now one person from each team again will read a given word silently from the screen. This time, they can only say three words total to describe it. They
+        can still use any gestures they wish except for spelling the word in the air. They cannot say the given word and their team has some seconds to guess.
+        If someone on their team guesses, they take 1 point. If your team guesses the word, you get another word to describe and continue until your time is up.
+        Play continues clockwise, with each team having one team member go to the bowl, until the bowl is empty.
+
+        Each found word is now worth two points.-->
+
+        The actor chooses a Single word (key word) for the guesser to use.
+    </string>
+
+    <string name="rules_title_round3">Round 3: Charades</string>
+
+    <string name="rules_round3">
+        <!--Same basic play plan, except now whoever plays cannot speak. They can use any gestures or movements they want. Their team has some seconds to guess the name on the paper.
+        If they guess correctly, they take 3 points. If your team guesses the word, you describe another one and continue until your time is up.
+
+        At the end of Round Three the game stops and determine a winner.-->
+
+        The actor may not make any noise and can only explain the word via gestures.
+    </string>
+
+    <string name="rules_game_more">
+        Team members switch roles between actor and guessers every turn. During each round teams make turns guessing until the pool of words is empty.
+        Keep in mind the SAME set of words is used for all three rounds!
+    </string>
+
+    <string name="rules_winner">
+        At the end of Round 3 total scores are added up and a winner is crowned!
+    </string>
+
+
+    <!-- Main Language Activity -->
+
+    <string name="title_language">Choose Language</string>
+
+    <string name="button_english">English</string>
+
+    <string name="button_greek">Ελληνικα</string>
+
+
+    <!-- Settings GamePlay Activity -->
+
+    <string name="title_num_teams">Number of teams</string>
+
+    <string name="radio_teams2">2 Teams</string>
+
+    <string name="radio_teams3">3 Teams</string>
+
+    <string name="radio_teams4">4 Teams</string>
+
+    <string name="title_round_time">Time of rounds</string>
+
+    <string name="radio_seconds1">60 Seconds</string>
+
+    <string name="radio_seconds2">90 Seconds</string>
+
+    <string name="radio_seconds3">120 Seconds</string>
+
+    <string name="title_words_input">Words input</string>
+
+    <string name="radio_words_input1">From System</string>
+
+    <string name="radio_words_input2">From Players</string>
+
+    <string name="title_words_per_team">Words per team</string>
+
+    <string name="words_per_team_hint"> Between 4 and 20</string>
+
+    <string name="words_error">Enter words per team between 4 and 20!</string>
+
+    <string name="words_num_error">Entering words per team is required!</string>
+
+
+    <!-- Settings Team Details Activity -->
+
+    <string name="title_name1">Enter name of Team 1</string>
+    <string name="hint_name1"> Team 1</string>
+
+    <string name="title_name2">Enter name of Team 2</string>
+    <string name="hint_name2"> Team 2</string>
+
+    <string name="title_name3">Enter name of Team 3</string>
+    <string name="hint_name3"> Team 3</string>
+
+    <string name="title_name4">Enter name of Team 4</string>
+    <string name="hint_name4"> Team 4</string>
+
+
+    <!-- Settings Insert Words Activity -->
+
+    <string name="enter_word">enter word</string>
+
+    <string name="enter_word1">enter word 1 of</string>
+
+    <string name="of">of</string>
+
+    <string name="words_wr_error">Writing a word is required!</string>
+
+    <string name="title_enter_word">Enter a word:</string>
+
+    <string name="button_next_word">Next Word</string>
+
+
+    <!-- Settings Choose Categories Activity -->
+
+    <string name="category_random">Random Words</string>
+
+    <string name="category_movies">Movies</string>
+
+    <string name="category_countries">Countries</string>
+
+    <string name="category_animals">Animals</string>
+
+    <string name="category_error">Select one or more categories!</string>
+
+
+    <!-- Playing Game Activity -->
+
+    <string name="title_round">Round</string>
+
+    <string name="title_team_playing">Team playing:</string>
+
+    <string name="title_rem_secs">Seconds remaining:</string>
+
+    <string name="title_describe_word">Describe the word:</string>
+
+    <string name="button_mistake">Mistake</string>
+
+    <string name="button_found">Found</string>
+
+    <string name="button_skip">Skip</string>
+
+
+    <!-- Info Before New Round Activity -->
+
+    <string name="round_rules_button">Round Rules</string>
+
+    <string name="title_ready">Get ready for Round </string>
+
+    <string name="title_team">Team </string>
+
+    <string name="title_is_playing">is playing</string>
+
+    <string name="title_found_points1">Each found word gets +1 point and each mistake -1 point!</string>
+
+    <string name="title_found_points2">Each found word gets +2 point and each mistake -1 point!</string>
+
+    <string name="title_found_points3">Each found word gets +3 point and each mistake -1 point!</string>
+
+
+    <!-- Info Between Round First Activity -->
+
+    <string name="found_words">Team %1$s found %2$d words.</string>
+
+    <string name="rem_words">There are %1$d remaining words to finish Round %2$d</string>
+
+    <string name="button_next_team">Next Team</string>
+
+
+    <!-- Info End Of Round Activity -->
+
+    <string name="team">Team</string>
+
+    <string name="end_of_round">End of Round</string>
+
+    <string name="words_found">Words\nFound</string>
+
+    <string name="words_mistake">Words\nMistake</string>
+
+    <string name="round_points">Round\nPoints</string>
+
+    <string name="next_round">Next Round</string>
+
+
+    <!-- Info End Of Game Activity -->
+
+    <string name="draw_2">We have a DRAW! between teams: %1$s and %2$s with %3$d Points!</string>
+
+    <string name="draw_3">We have a DRAW! between teams:  %1$s , %2$s and %3$s with %4$d Points!</string>
+
+    <string name="draw_all">We have a DRAW! between ALL teams with</string>
+
+    <string name="won">WON, with</string>
+
+    <string name="and">and</string>
+
+    <string name="with">with</string>
+
+    <string name="points">Points</string>
+
+    <string name="overall_found">Overall\nFound</string>
+
+    <string name="overall_mistakes">Overall\nMistakes</string>
+
+    <string name="overall_points">Overall\nPoints</string>
+
+    <string name="new_game_button">Start new Game</string>
+
+
+</resources>
